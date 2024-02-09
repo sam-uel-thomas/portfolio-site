@@ -1,6 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import NavbarItem from './NavbarItem'
+
+const navItems = [
+    { link: '#', title: 'about' },
+    { link: '#', title: 'contact' },
+    { link: '#', title: 'projects' },
+]
 
 const Navbar = () => {
     return (
@@ -15,10 +22,14 @@ const Navbar = () => {
                 />
             </Link>
             <div className='menu hidden md:block w-auto' id='navbar'>
-                <ul className='flex flex-row'>
-                    <li className='mx-3'><Link href={"#"} className='block py-2 pl-3 pr-4 text-white sm:text-xl rounded md:p-0'>about</Link></li>
-                    <li className='mx-3'><Link href={"#"} className='block py-2 pl-3 pr-4 text-white sm:text-xl rounded md:p-0'>contact</Link></li>
-                    <li className='mx-3'><Link href={"#"} className='block py-2 pl-3 pr-4 text-white sm:text-xl rounded md:p-0'>projects</Link></li>
+                <ul className='flex p-4 md:p-0 md:flex-row md:space-x-8'>
+                    {
+                        navItems.map((item, index) => (
+                            <li key={index}>
+                                <NavbarItem href={item.link} title={item.title} />
+                            </li>
+                        ))
+                    }
                 </ul>
             </div>
         </div>
