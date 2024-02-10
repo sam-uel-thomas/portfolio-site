@@ -4,16 +4,16 @@ import Link from 'next/link'
 import NavbarItem from './NavbarItem'
 
 const navItems = [
-    { link: '#', title: 'about' },
-    { link: '#', title: 'contact' },
-    { link: '#', title: 'projects' },
+    { link: '#projects', title: 'projects' },
+    { link: '#about', title: 'about' },
+    { link: '#contact', title: 'contact' },
 ]
 
 const Navbar = () => {
     return (
-        <div className='flex flex-wrap items-center justify-between mx-auto px-6 sm:px-24 py-6'>
+        <div className='sticky top-0 z-50 flex flex-wrap items-center justify-between mx-auto px-6 sm:px-24 py-6 bg-[#0E0E0C]'>
             <div className="group flex items-center space-x-4">
-                <Link href={"/"}>
+                <Link href={"#landing"}>
                     <Image
                         src="/images/Icon.svg"
                         alt="logo"
@@ -22,10 +22,10 @@ const Navbar = () => {
                         className="transform transition-transform duration-700 group-hover:rotate-90"
                     />
                 </Link>
-                <div className="overflow-hidden max-w-0 group-hover:max-w-full transition-all duration-700">
-                    <span className="text-2xl font-sans font-bold whitespace-nowrap">
+                <div className="overflow-hidden md:max-w-0 group-hover:max-w-full transition-all duration-700">
+                    <Link href={'#'} className="text-2xl font-sans font-bold whitespace-nowrap">
                         SAM THOMAS
-                    </span>
+                    </Link>
                 </div>
             </div>
             <div className='menu hidden md:block w-auto' id='navbar'>
