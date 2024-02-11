@@ -30,11 +30,11 @@ export default function Home() {
                     <HeroSection />
                     <ScrollTag />
                 </div> 
-                <div id="projects" className="section bg-[#FFFFFF] text-[#0E0E0C] font-sans font-bold" style={{ minHeight: `calc(100vh - ${navbarHeight}px)` }}>
-                    Projects
-                </div>
                 <div id="about" className="section bg-[#0E0E0C] text-[#FFFFFF] font-sans font-bold" style={{ minHeight: `calc(100vh - ${navbarHeight}px)` }}>
                     About
+                </div>
+                <div id="projects" className="section bg-[#FFFFFF] text-[#0E0E0C] font-sans font-bold" style={{ minHeight: `calc(100vh - ${navbarHeight}px)` }}>
+                    Projects
                 </div>
                 <div id="contact" className="section bg-[#FFFFFF] text-[#0E0E0C] font-sans font-bold" style={{ minHeight: `calc(100vh - ${navbarHeight}px)` }}>
                     Contact

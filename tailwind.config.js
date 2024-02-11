@@ -8,7 +8,8 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ["GeneralSans", "ui-sans-serif", "system-ui"],
+                sans: ["var(--font-general-sans)"],
+                cabinet: ["var(--font-cabinet-grotesk)"],
             },
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

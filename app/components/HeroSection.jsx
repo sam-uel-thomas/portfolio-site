@@ -1,16 +1,26 @@
 import React from 'react'
+import Image from 'next/image'
 
 const HeroSection = () => {
     return (
-        <div className='font-sans px-6 py-12 sm:px-24 sm:py-12'>
-            <div className="grid grid-cols-1 sm:grid-cols-12">
-                <div className="col-span-7 place-self-center sm:place-self-start text-center sm:text-left">
-                    <div className="font-bold text-4xl">Hello, I'm Sam,</div>
-                    <div className="text-xl my-4">I'm a student at Kings College London studying computer science</div>
+        <div className='relative font-cabinet mt-16 px-6 py-12 sm:px-12 sm:py-24 text-center flex items-center justify-center'>
+            <Image
+                src="/images/BackgroundImage.svg"
+                alt="logo"
+                width={500}
+                height={500}
+                className="absolute z-0"
+            />
+            <div className='z-10 flex flex-col'>
+                <div>
+                    <div className="font-extrabold text-xl">HI I'M,</div>
+                    <div className="font-extrabold my-4 text-7xl sm:text-8xl md:text-9xl">SAM THOMAS</div>
+                    <div className="text-xl mt-5 font-light">A Computer Science student</div>
+                    <div className="text-xl font-light">at Kings College London</div>
                 </div>
-                <div className="col-span-5 place-self-center sm:place-self-start text-center mt-4">
+                {/* <div className="col-span-5 place-self-center sm:place-self-start text-center mt-4">
                     <div className="w-[250px] h-[375px] sm:w-[400px] sm:h-[500px] bg-white mx-auto"></div>
-                </div>
+                </div> */}
             </div>
         </div>
     )

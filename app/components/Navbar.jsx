@@ -4,8 +4,8 @@ import Link from 'next/link'
 import NavbarItem from './NavbarItem'
 
 const navItems = [
-    { link: '#projects', title: 'projects' },
     { link: '#about', title: 'about' },
+    { link: '#projects', title: 'projects' },
     { link: '#contact', title: 'contact' },
 ]
 

@@ -15,6 +15,12 @@ const GeneralSans = localFont({
     variable: '--font-general-sans',
   })
 
+const CabinetGrotesk = localFont({
+    src: '../public/fonts/CabinetGrotesk-Variable.ttf',
+    display: 'swap',
+    variable: '--font-cabinet-grotesk',
+  })
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable}`}>
