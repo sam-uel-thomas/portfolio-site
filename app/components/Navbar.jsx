@@ -11,7 +11,7 @@ const navItems = [
 
 const Navbar = () => {
     return (
-        <div className='sticky top-0 z-50 flex flex-wrap items-center justify-between mx-auto px-6 sm:px-24 py-6 bg-[#0E0E0C]'>
+        <div className='primary-navigation sticky top-0 z-50 flex flex-wrap items-center justify-between mx-auto px-6 sm:px-24 py-6 bg-[#0E0E0C]'>
             <div className="group flex items-center space-x-4">
                 <Link href={"#landing"}>
                     <Image

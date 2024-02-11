@@ -18,7 +18,8 @@
 
 html {
     scroll-behavior: smooth;
-}
+    scroll-padding: var(--scroll-padding, 5rem);
+  }
 
 body {
     color: rgb(var(--foreground-rgb));
