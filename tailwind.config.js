@@ -15,6 +15,17 @@ module.exports = {
                 "gradient-conic":
                     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
             },
+            keyframes: {
+                'grow-shrink': {
+                  '0%': { 'height': '0%', 'opacity': '1' },
+                  '50%': { 'height': '100%', 'opacity': '1' },
+                  '75%': { 'height': '100%', 'opacity': '0' },
+                  '100%': { 'height': '0%', 'opacity': '0' },
+                }
+              },
+              animation: {
+                'grow-shrink': 'grow-shrink 3s infinite',
+              }
         },
     },
     plugins: [],
