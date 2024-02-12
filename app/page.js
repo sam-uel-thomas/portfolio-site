@@ -49,19 +49,19 @@ export default function Home() {
         <>
             <Navbar />
             <main className="flex flex-col scroll-behavior[smooth]">                 
-                <div ref={landingRef} id="landing" className="section bg-[#0E0E0C]" style={{ minHeight: `calc(100vh - ${navbarHeight}px)` }}>
+                <section ref={landingRef} id="landing" className="section bg-[#0E0E0C]" style={{ minHeight: `calc(100vh - ${navbarHeight}px)` }}>
                     <HeroSection />
                     <ScrollTag />
-                </div> 
-                <div id="about" className="section bg-[#E8E8E8] font-sans font-bold rounded-t-3xl overflow-hidden shadow-lg z-20" style={{ minHeight: `calc(100vh - ${navbarHeight}px)` }}>
+                </section> 
+                <section id="about" className="section bg-[#E8E8E8] font-sans font-bold rounded-t-3xl overflow-hidden shadow-lg z-20" style={{ minHeight: `calc(100vh - ${navbarHeight}px)` }}>
                     <About />
-                </div>
-                <div id="projects" className="section bg-[#E8E8E8] font-sans font-bold rounded-b-3xl overflow-hidden z-20" style={{ minHeight: `calc(100vh - ${navbarHeight}px)` }}>
+                </section>
+                <section id="projects" className="section bg-[#E8E8E8] font-sans font-bold rounded-b-3xl overflow-hidden z-20" style={{ minHeight: `calc(100vh - ${navbarHeight}px)` }}>
                     <Projects />
-                </div>
-                <div id="contact" className="section bg-[#0E0E0C] font-sans font-bold z-10" style={{ minHeight: `calc(100vh - ${navbarHeight}px)` }}>
+                </section>
+                <section id="contact" className="section bg-[#0E0E0C] font-sans font-bold z-10 h-[50vh]">
                     <Contact />
-                </div>
+                </section>
             </main>
         </>
     );
