@@ -35,7 +35,7 @@ const HeroSection = () => {
             <div className='z-10 flex flex-col'>
                 <div>
                     <div className="font-medium text-xl">HI I'M,</div>
-                    <div className="font-extrabold my-4 text-7xl sm:text-8xl md:text-9xl">SAM THOMAS</div>
+                    <div className="text-[#E8E8E8] font-extrabold my-4 text-7xl sm:text-8xl md:text-9xl">SAM THOMAS</div>
                     <div className="text-xl mt-5 font-medium">A Computer Science student</div>
                     <div className="text-xl font-medium">at Kings College London</div>
                 </div>
