@@ -26,7 +26,10 @@ module.exports = {
               },
               animation: {
                 'grow-shrink': 'grow-shrink 3s infinite',
-              }
+              },
+              scrollBehavior: {
+                'smooth': 'smooth',
+              },
         },
     },
     plugins: [],
