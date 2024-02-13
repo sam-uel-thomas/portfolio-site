@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
     content: [
         "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,8 +9,8 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ["var(--font-general-sans)"],
-                cabinet: ["var(--font-cabinet-grotesk)"],
+                sans: ["GeneralSans"],
+                cabinet: ["CabinetGrotesk"],
             },
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

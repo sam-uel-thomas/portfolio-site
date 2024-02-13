@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "title": "Project 1",
+        "description": "This is a description of Project 1",
+        "languages": ["Language 1", "Language 2"],
+        "skills": ["Skill 1", "Skill 2"],
+        "link": "/projects/1"
+    },
+    {
+        "id": "2",
+        "title": "Project 2",
+        "description": "This is a description of Project 2",
+        "languages": ["Language 3", "Language 4"],
+        "skills": ["Skill 3", "Skill 4"],
+        "link": "/projects/2"
+    },
+    {
+        "id": "3",
+        "title": "Project 3",
+        "description": "This is a description of Project 3",
+        "languages": ["Language 5", "Language 6"],
+        "skills": ["Skill 5", "Skill 6"],
+        "link": "/projects/3"
+    },
+    {
+        "id": "4",
+        "title": "Project 4",
+        "description": "This is a description of Project 4",
+        "languages": ["Language 7", "Language 8"],
+        "skills": ["Skill 7", "Skill 8"],
+        "link": "/projects/4"
+    },
+    {
+        "id": "5",
+        "title": "Project 5",
+        "description": "This is a description of Project 5",
+        "languages": ["Language 9", "Language 10"],
+        "skills": ["Skill 9", "Skill 10"],
+        "link": "/projects/5"
+    },
+    {
+        "id": "6",
+        "title": "Project 6",
+        "description": "This is a description of Project 6",
+        "languages": ["Language 11", "Language 12"],
+        "skills": ["Skill 11", "Skill 12"],
+        "link": "/projects/6"
+    }
+]

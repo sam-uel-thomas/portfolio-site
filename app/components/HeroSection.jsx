@@ -15,7 +15,10 @@ const HeroSection = () => {
                 imageRef.current.style.transform = `rotate(${window.scrollY / 8}deg)`;
             }
             const scrollPosition = window.scrollY;
-            const landingHeight = heroRef.current.offsetHeight;
+            let landingHeight = 0;
+            if (heroRef.current) {
+                landingHeight = heroRef.current.offsetHeight;
+            }
 
             if (scrollPosition <= landingHeight) {
                 const newOpacity = 1 - scrollPosition / (2 * landingHeight);

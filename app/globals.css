@@ -2,6 +2,18 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@font-face {
+    font-family: 'GeneralSans';
+    src: url('/fonts/GeneralSans-Variable.ttf') format('truetype');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'CabinetGrotesk';
+    src: url('/fonts/CabinetGrotesk-Variable.ttf') format('truetype');
+    font-display: swap;
+  }
+
 :root {
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 214, 219, 220;

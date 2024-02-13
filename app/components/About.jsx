@@ -4,14 +4,14 @@ import RectIcon from './RectIcon'
 
 const About = () => {
     return (
-        <div className="flex flex-col justify-center items-center font-sans text-[#383631]">
-            <div className="flex flex-row justify-center items-center pt-12">
+        <div className="flex flex-col justify-center items-center text-[#383631]">
+            <div className="font-sans flex flex-row justify-center items-center pt-12">
                 <CircIcon fill="text-[#383631]" size={25} />
                 <div className="font-sans text-5xl text-center font-extrabold mx-4">ABOUT</div>
                 <RectIcon fill="text-[#383631]" size={25} />
             </div>
             <div className='grid grid-cols-1 sm:grid-cols-11 gap-5 mt-16 font-medium text-2xl mx-6 sm:mx-24'>
-            <div className='col-span-6'>
+            <div className='font-cabinet col-span-6'>
                 <div className='mb-4'>
                     From my early days, fueled by childhood curiosity and a fascination for Scratch games, to crafting my first eclectic website, my journey into design and coding has been a continuous evolution.
                 </div>

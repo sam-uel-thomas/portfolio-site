@@ -2,6 +2,7 @@ import React from 'react'
 import CircIcon from './CircIcon'
 import RectIcon from './RectIcon'
 import ProjectCard from './ProjectCard'
+import ProjectData from '../data/ProjectData.json';
 import Link from 'next/link'
 
 const Projects = () => {
@@ -13,42 +14,15 @@ const Projects = () => {
                 <CircIcon fill="text-[#383631]" size={25} />
             </div>
             <div className='grid grid-cols-3 gap-4 pt-12'>
-                <ProjectCard 
-                    title="PROJECT 1"
-                    languages={["LANGUAGE"]} 
-                    skills={["SKILLS"]}
-                    link='#'
-                />
-                <ProjectCard 
-                    title="PROJECT 2"
-                    languages={["LANGUAGE"]} 
-                    skills={["SKILLS"]}
-                    link='#'
-                />
-                <ProjectCard 
-                    title="PROJECT 3"
-                    languages={["LANGUAGE"]} 
-                    skills={["SKILLS"]}
-                    link='#'
-                />
-                <ProjectCard 
-                    title="PROJECT 4"
-                    languages={["LANGUAGE"]} 
-                    skills={["SKILLS"]}
-                    link='#'
-                />
-                <ProjectCard 
-                    title="PROJECT 5"
-                    languages={["LANGUAGE"]} 
-                    skills={["SKILLS"]}
-                    link='#'
-                />
-                <ProjectCard 
-                    title="PROJECT 6"
-                    languages={["LANGUAGE"]} 
-                    skills={["SKILLS"]}
-                    link='#'
-                />
+                {ProjectData.map((project, index) => (
+                    <ProjectCard
+                        key={project.id}
+                        title={project.title}
+                        link={`/projects/${project.id}`}
+                        languages={project.languages}
+                        skills={project.skills}
+                    />
+                ))}
             </div>
         </section>
     )
