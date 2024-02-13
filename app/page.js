@@ -48,8 +48,8 @@ export default function Home() {
     return (
         <>
             <Navbar />
-            <main className="flex flex-col scroll-behavior[smooth] backdrop-filter-grain">                 
-                <section ref={landingRef} id="landing" className="section bg-[#0E0E0C] text-[#BFBFB0]" style={{ minHeight: `calc(100vh - ${navbarHeight}px)` }}>
+            <main className="flex flex-col scroll-behavior[smooth]">                 
+                <section ref={landingRef} id="landing" className="section bg-[#0E0E0C]" style={{ minHeight: `calc(100vh - ${navbarHeight}px)` }}>
                     <HeroSection />
                     <ScrollTag />
                 </section> 
